@@ -1,6 +1,6 @@
 eg.RegisterPlugin(
     name = "SMTPd",
-    author = "Chase Whitten (Techoguy) and Allen Derusha",
+    author = "Chase Whitten (Techoguy) and luma",
     version = "0.0.1",
     kind = "other",
     description = "Setup an SMTP daemon and trigger events when messages arrive.",
@@ -13,7 +13,8 @@ eg.RegisterPlugin(
         "9GGeCW/VX1XLCS7baU5CwIf5nzDtEq5evX8JuDHh+nkkdk+6WoUAdR+mVcKNu1RkAt6oF7Qee1Y5"
         "iyXxOwHG1GBCML14LAEtVC+6kiBjm9v1jmAcLpATTM0fqV/CSMIv8J1QQlsScBiwUeDte5D+BPMR"
         "6RwgYBdAO56ZpZoIT5+HenYS//vl3CeOUlJ5FnYb6QAAAABJRU5ErkJggg=="
-    )   
+    ),
+    url = "http://www.eventghost.net/forum/viewtopic.php?f=9&t=7833"
 )
 
 # TO DO:
