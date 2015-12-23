@@ -1,6 +1,6 @@
 eg.RegisterPlugin(
     name = "SMTPd",
-    author = "somebody smarter than me",
+    author = "Chase Whitten (Techoguy) and Allen Derusha",
     version = "0.0.1",
     kind = "other",
     description = "Setup an SMTP daemon and trigger events when messages arrive.",
@@ -38,11 +38,11 @@ class CustomSMTPServer(smtpd.SMTPServer):
     global smtpdPrefix
     def process_message(self, peer, mailfrom, rcpttos, data):
         print 'SMTPd: Receiving message from:', peer
-        print 'SMTPd: Message addressed from:', mailfrom
-        print 'SMTPd: Message addressed to  :', rcpttos
-        print 'SMTPd: Message length        :', len(data)
+        #print 'SMTPd: Message addressed from:', mailfrom
+        #print 'SMTPd: Message addressed to  :', rcpttos
+        #print 'SMTPd: Message length        :', len(data)
         headers = Parser().parsestr(data)
-        print 'SMTPd: Subject               :%s' % headers['subject']
+        #print 'SMTPd: Subject               :%s' % headers['subject']
         #print 'SMTPd: Message               :\n', data
         for recemail in rcpttos:
             eg.TriggerEvent(recemail, prefix=smtpdPrefix, payload=headers['subject'])
