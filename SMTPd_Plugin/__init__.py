@@ -1,6 +1,6 @@
 eg.RegisterPlugin(
     name = "SMTPd",
-    author = "Chase Whitten (Techoguy) and luma",
+    author = "Techoguy and luma",
     version = "0.0.1",
     kind = "other",
     description = "Setup an SMTP daemon and trigger events when messages arrive.",
